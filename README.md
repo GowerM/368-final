@@ -1,20 +1,20 @@
 368-final
 =========
 
-#Objective
+##Objective
 My objective for my website is
 
 * Web presence
 * Portfolio
 * A way to easily contact for services
 
-#Content
+##Content
 
 * About Me
 * Writing samples
 * Design Projects
 * Form for requests
 
-#Attribution
+##Attribution
 
 * [Codepen] (http://codepen.io)
