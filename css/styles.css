@@ -31,6 +31,14 @@ li {
   font-family: 'Ubuntu Mono', sans-serif;
 }
 
+.prices {
+  display : list;
+  font-family: 'Share Tech Mono', sans-serif;
+  color : #C1CCA1;
+  font-size : .75em;
+  list-style : none;	
+}
+
 img {
 	width : 960px; 
 	height : 719px;
