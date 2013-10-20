@@ -1,3 +1,42 @@
 @charset "UTF-8";
 /* CSS Document */
 
+h1 {
+	font-family: 'Share Tech Mono', sans-serif;	
+}
+
+h3 {
+	font-family: 'The Girl Next Door', cursive;
+}
+
+p {
+	font-family: 'Ubuntu Mono', sans-serif;
+}
+
+a {
+  text-decoration : none;
+  color : #64797E;
+}
+
+ul {
+  list-style : none;
+  size : 70px;
+  padding : 10px;
+  margin : 10px;
+}
+
+li {
+  display : inline;
+  padding : 0 10px;
+  font-family: 'Ubuntu Mono', sans-serif;
+}
+
+img {
+	width : 960px; 
+	height : 719px;
+}
+
+/*header {
+	background : url('../img/ferris.jpg');
+	background-image : 960px 719px;
+}*/
