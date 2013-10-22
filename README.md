@@ -18,4 +18,5 @@ My objective for my website is
 ##Attribution
 
 * [Codepen] (http://codepen.io)
-* [Rough Draft img](http://edge-img.datpiff.com/mb417494/AC_Smitty_The_Rough_Draft-front-large.jpg)
+* [All images were taken by me](#)
+* [Fonts] (http://www.google.com/fonts)
