@@ -44,6 +44,35 @@ img {
 	height : 719px;
 }
 
+input {
+  font-size : inherit;
+}
+
+input[type="text"] {
+  display : block;
+  margin-bottom : 15px;
+  padding : 10px;
+  width : 250px;
+  border : 2px solid steelblue;
+}
+
+input[type="radio"] {
+  margin :0 8px 25px 18px;
+}
+input[type="radio"]:first-child {
+  margin-left: 0;
+}
+
+input[type="submit"] {
+  width : 100px;
+  height : 40px;
+  border : none;
+  background : steelblue;
+  color : white;
+  font-size : inherit;
+}
+
+
 /*header {
 	background : url('../img/ferris.jpg');
 	background-image : 960px 719px;
