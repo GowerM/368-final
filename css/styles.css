@@ -1,79 +1,673 @@
 @charset "UTF-8";
 /* CSS Document */
 
-h1 {
-	font-family: 'Share Tech Mono', sans-serif;	
+
+/*=================
+	Global
+===================*/
+html {
+	background: url('../img/rice.png') #efd8a9;	
 }
 
-h3 {
-	font-family: 'The Girl Next Door', cursive;
+/*==============================
+        Logo
+==============================*/
+header h1 a {
+        background: #bec49a url("../img/Logo.png") no-repeat center center;
+        border-radius: 50%;
+        display: block;
+        height: 200px;
+       	left: 40px;
+        position: relative;
+        text-indent: -999em;
+        width: 230px;
+        z-index: 2;
+		
+        
+        /* CSS 3*/
+    -webkit-transition: background-color .75s;    
+    -moz-transition: background-color .75s;
+	transition: background-color .75s;
+		
+}
+
+header h1 a:hover {
+        background: #6e684b url("../img/Logo.png") no-repeat center center;
+}
+
+header h1 {
+	border-bottom: none;
+}
+
+
+/*==============================
+        Navigation
+==============================*/
+header {
+        position: relative;
+}
+
+
+header li {
+        float: left;
+        list-style: none;
+		border-radius: 35%;
+		padding-top: 10px;
+}
+
+
+header ul {
+        margin: 0 auto;
+}
+
+
+header div {
+        background: #bec49a;        
+        border-radius: 20px; /*20px*/
+    	height: 64px; /*64px*/
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100%; /*960px*/
+		   }
+
+header nav {
+	float: right;
+	margin-top: -177px;
+}
+
+nav li {
+	margin: 70px 7px 0 7px ;
+	background: #bec49a;
+	display : inline;
+  	font-family: 'greyscalebasicregular', sans-serif;	
+}
+
+nav a:link,
+nav a:visited {
+        color: #8c745e;
+    	font-family: 'greyscalebasicregular', arial, sans-serif;
+        height: 64px;
+        display: block;
+        line-height: 48px;
+        text-align: center;        
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 128px; 
+		z-index: 2;
+        
+        /*CSS 3*/
+  -webkit-transition: all 1s;      
+  -moz-transition: all 1s;
+  transition: all 1s;
+  
+}
+
+nav a:hover, 
+nav a:active {
+    color: #8c745e;
+    margin-top: 10px;
+}
+
+
+/*====================
+		fonts
+=================*/
+
+
+/*Head*/
+@font-face {
+    font-family: 'roman_sdregular';
+    src: url('../fonts/Roman_SD-webfont.eot');
+    src: url('../fonts/Roman_SD-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roman_SD-webfont.woff') format('woff'),
+         url('../fonts/Roman_SD-webfont.ttf') format('truetype'),
+         url('../fonts/Roman_SD-webfont.svg#roman_sdregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/*Subhead*/
+@font-face {
+    font-family: 'greyscalebasicregular';
+    src: url('Greyscale_Basic_Regular-webfont.eot');
+    src: url('Greyscale_Basic_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Greyscale_Basic_Regular-webfont.woff') format('woff'),
+         url('Greyscale_Basic_Regular-webfont.ttf') format('truetype'),
+         url('Greyscale_Basic_Regular-webfont.svg#greyscalebasicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/*Graf*/
+@font-face {
+    font-family: 'rabioheadregular';
+    src: url('../fonts/rabiohead-webfont.eot');
+    src: url('../fonts/rabiohead-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rabiohead-webfont.woff') format('woff'),
+         url('../fonts/rabiohead-webfont.ttf') format('truetype'),
+         url('../fonts/rabiohead-webfont.svg#rabioheadregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+/*------------Applied fonts--------------*/
+h1 {
+	font-family: 'roman_sdregular', serif;
+	font-size: 2em;
+	color: #402b3a;	
+	border-bottom: .125em double #97c2cc;;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'greyscalebasicregular', sans-serif;
+	font-size: 1.5em;
+	color: #8c745e;
 }
 
 p {
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-family: 'rabioheadregular', helvetica, sans-serif;
+    line-height: 24px;
+	font-size: 1.25em;
+	color: #6c7371;		
 }
 
+ 
+/* Links and lists */
 a {
   text-decoration : none;
-  color : #64797E;
+  color : #bec49a;
 }
 
-ul {
-  list-style : none;
-  size : 70px;
-  padding : 10px;
-  margin : 10px;
+
+/*===============================================
+	Structure and layout
+=================================================*/
+
+
+.container {
+        margin: 10px auto;
+        width: 90%; /*960px*/
+		background: #f5f1df;
+		padding: 20px;	
 }
 
-li {
-  display : inline;
-  padding : 0 10px;
-  font-family: 'Ubuntu Mono', sans-serif;
+.container:after {
+	content : ".";
+  display : block;
+  height : 0;
+  clear : both;
+  visibility : hidden;
 }
 
-.prices {
+
+article {
+        padding-top: 0.20833%;
+}
+
+/*==================
+	index
+=================*/
+
+.greeting {
+	margin: 0 auto;
+	width:  90%; /*864px*/	
+}
+
+
+/*=================
+	Write.html 
+===================*/
+.wleft h1,
+.wright h1,
+.dleft h1,
+.dright h1 {
+	border-bottom: none;
+}
+
+.wleft h3,
+.wright h3 {
+	font-size: 1.125em;	
+}
+
+.wleft p,
+.wright p {
+	font-size: 1em;	
+}
+
+section.wleft,
+section.wright {
+  text-align: center;
+  border: .25em double #97c2cc;
+  border-radius: 20%;
+  width: 45%; /*432px*/
+  padding: .5em;
+  
+}
+
+section.wleft {
+	float: left;	
+}
+
+section.wright {
+	float: right;	
+}
+
+.wleft a:link,
+.wleft a:visited,
+.wright a:link,
+.wright a:visited {
+  text-decoration: none;
+  color: #6c7371;
+  
+  
+  /*CSS*/
+  -webkit-transition: box-shadow 1s;
+  -moz-transition: box-shadow 1s;
+  transition: box-shadow 1s;
+}
+
+.wleft:hover,
+.wleft:active,
+.wright:hover,
+.wright:active {
+  box-shadow: inset 0 0 2em .1em #97c2cc;
+}
+
+.bcopy {
+	margin: 0 0 0 50px;	
+}
+
+blockquote {
+	font-family: 'rabioheadregular', helvetica, sans-serif;
+    line-height: 24px;
+	font-size: .8em;
+	color: #6c7371;		
+}
+
+/*-----Footer------*/
+
+footer {
+	width: 95%;
+	padding: 20px;	
+}
+
+footer p {
+ line-height: 2em;
+ font-size: 1em;	
+}
+
+
+footer.previous a,
+footer.next a {
+  padding-top:10px;
+  width: 100px;
+  height: 48px;
+  text-decoration: none;
+  color: #6e684b;
+  font-size: 4em; /*48px*/
+}
+
+
+.previous {
+  float: left;
+  padding-left: 50px;
+  padding-top: 3px;
+  background: url("../img/sprite.png") no-repeat -1px -95px;
+  font-size: 2.5em; /*48px*/
+}
+
+
+.previous:hover,
+.previous:target {
+  background: url("../img/sprite.png") no-repeat -1px -147px;
+  color: #6e684b;
+}
+
+.next {
+  text-align: center;
+  float: right;
+  padding-right: 100px;
+  padding-top: 3px;
+  background: url("../img/sprite.png") no-repeat 90px 0;
+  font-size: 2.5em; /*48px*/
+}
+
+.next:hover,
+.next:target {
+  background: url("../img/sprite.png") no-repeat 90px -49px;
+  color: #6e684b;
+}
+
+
+/*=================
+	Design.html
+===================*/
+
+section.dleft,
+section.dright {
+  text-align: center;
+  border: .25em double #97c2cc;
+  width: 25%;
+  height: 500px;
+  padding: 1em;
+  margin: .75em;
+  float: left;
+}
+
+section.dleft img,
+section.dright img {
+	width: 50%;	
+}
+
+.dleft a:link,
+.dleft a:visited,
+.dright a:link,
+.dright a:visited {
+  text-decoration: none;
+  color: #6c7371;
+  
+  
+  /*CSS*/
+  -webkit-transition: box-shadow 1s;
+  -moz-transition: box-shadow 1s;
+  transition: box-shadow 1s;
+}
+
+.dleft:hover,
+.dleft:active,
+.dleft:target,
+.dright:hover,
+.dright:active,
+.dright:target {
+  box-shadow: inset 0 0 2em .1em #97c2cc;
+}
+
+/*----images------*/
+
+.bcopy img {
+	width: 60%;	
+}
+
+
+/*=================
+	Submit.html
+===================*/
+
+
+/*-----Layout--------*/
+
+
+
+section.types {
+	width: 70.833333%; /*680px*/
+	float: left;
+	/*border-right: .25em double #97c2cc;
+	padding-right: 10px;*/
+}
+
+section:after {
+  content : ".";
+  display : block;
+  height : 0;
+  clear : both;
+  visibility : hidden;
+}
+
+section.instructions {
+ 	width: 100%; /*960*/
+	padding: 600px 0 0 0;
+}
+
+aside {
+	float: right;
+	width: 20.083333%; /*260px*/
+	padding-bottom: 98.153846%; /*250px*/
+	background: #97c2cc;
+	padding: 2%;
+	margin-top: 10px;		
+}
+
+aside li {
   display : list;
-  font-family: 'Share Tech Mono', sans-serif;
-  color : #C1CCA1;
-  font-size : .75em;
-  list-style : none;	
+  font-family: 'rabioheadregular', helvetica, sans-serif;
+  line-height: 24px;
+  font-size: 1em;
+  color: #6c7371;	
+  list-style: none;
+  	
 }
 
-img {
-	width : 960px; 
-	height : 719px;
-}
+/*form*/
 
 input {
-  font-size : inherit;
+  font-size: inherit;
 }
 
 input[type="text"] {
-  display : block;
-  margin-bottom : 15px;
-  padding : 10px;
-  width : 250px;
-  border : 2px solid steelblue;
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 250px;
+  border: 2px solid #97c2cc;
+}
+
+textarea {
+  width: 270px;
+  height: 300px;
+  border: 2px solid #97c2cc;
+  margin-bottom: 20px;
 }
 
 input[type="radio"] {
-  margin :0 8px 25px 18px;
+  margin: 0 10px 20px 10px;
 }
+
 input[type="radio"]:first-child {
   margin-left: 0;
 }
 
 input[type="submit"] {
-  width : 100px;
-  height : 40px;
-  border : none;
-  background : steelblue;
-  color : white;
-  font-size : inherit;
+  width: 150px;
+  height: 50px;
+  border: none;
+  background: #6c7371;
+  color: #97c2cc;
+  font-size: inherit;
+  border-radius: 10%;
+  font-size: font-family: 'roman_sdregular', serif;
+	font-size: 2em;
+}
+
+input:hover,
+textarea:hover {
+  background-color: #6c7371;
+  color: #801c1c;
 }
 
 
-/*header {
-	background : url('../img/ferris.jpg');
-	background-image : 960px 719px;
-}*/
+
+/*By putting the + will target adjacent siblings*/
+
+input[type="radio"]:checked + label {
+  font-size: 1.375em;
+  font-weight: bold;
+}
+
+/*=============================
+	MEDIA QUERIES
+==============================*/
+
+/*-----------13"--------------*/
+
+@media screen and (max-width: 1440px) {
+ 
+  /*Write*/
+  .wright,
+  .wleft { 
+		width: 45%;
+		margin: 0 0 1em 0; 
+  }
+  
+  .lclear {
+	clear: left;  
+  }
+  
+  
+  .rclear {
+	margin-top: -1.25em;  
+  }
+  
+}
+
+/*------------Tablet----------------*/
+
+@media screen and (max-width: 1040px) {
+
+
+/*Design*/
+
+	section.dright, 
+	section.dleft {
+	width: 40%;
+		
+	}
+	section.dleft {
+		margin-left: 2.5em;
+		}
+
+/*Submit*/
+
+
+	section.instructions {
+		margin-top: 3em;
+		}
+
+}
+
+
+
+/*--------------------Phone------------------*/
+
+@media screen and (max-width: 480px) {
+	
+		
+/*Navigation*/
+	
+	
+	header h1 a {
+        left: 20px;
+		}
+
+	header {
+        position: relative;
+		background: #bec49a;
+		}
+
+
+	header li {
+		border-radius: 0;
+		margin-top: 0;
+		text-algin: center;
+		padding-top: 0;
+		}
+		
+	header li:nth-child(1) {
+		margin-top: -40px;
+	}
+
+
+	header div {
+        display: none;
+		   }
+
+	nav li {
+		width: 90%;
+		display: block;
+		}
+
+nav a:link,
+nav a:visited {
+        display: block;
+        text-align: center;        
+        width: 100%;
+		
+        /*CSS 3*/
+  -webkit-transition: background;
+  -moz-transition: background;      
+  transition: background;
+}
+
+nav a:hover, 
+nav a:active {
+    background: #8c745e;
+	color: #bec49a;
+	margin: 0;
+}
+
+/*Write and Design*/	
+
+	section.wright, 
+	section.wleft, 
+	section.dright, 
+	section.dleft {
+		width: 90%;
+		float: left;
+		margin: .5em;	
+	}
+	
+	.bcopy {	
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	
+/*Submit*/
+	
+	aside {
+	width: 100%;
+	float: left;
+	background: none;
+	text-align: left;
+	padding: .2em;	
+	}
+	
+	section.types,
+	section.instructions {
+	width: 100%;	
+	}
+	
+	textarea,
+	input[type="radio"]
+	 {
+	margin-bottom: 10px;	
+		}
+	
+
+/*Next and Previous Buttons*/
+
+	.previous {
+		margin-left: -37px;	
+	}
+	
+	.next {
+		margin-right: -20px;
+		padding-right: 60px;
+	}
+	
+}
+
